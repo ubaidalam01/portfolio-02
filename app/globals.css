@@ -1,8 +1,8 @@
-@tailwind base;
+ @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/*:root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -12,10 +12,211 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #222831;
+  color: white;
 }
+
+header {
+  background-color: #222831;
+  color: white;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: index 10;
+  padding: 24px;
+}
+
+@media (min-width: 768px) {
+  header {
+      display: flex; 
+  }
+}
+
+#head-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+#hd-2{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+#hd-div2{
+  margin-right: 32px;
+}
+
+/* @media (max-width: 768px) {
+  #hd-2 {
+      display: none;
+  }
+} */
+
+@media (min-width: 768px) {
+  #menu {
+      display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #hd-div2 > *:not([hidden]) ~ *:not([hidden]) {
+      --tw-space-x-reverse: 0;
+      margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+      margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 768px) {
+  #hd-div2 {
+      display: block;
+  }
+}
+
+
+
+#hd-scl{
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #hd-scl {
+      display: inline-block;
+  }
+}
+
+
+
+/* INTRO CSS */
+
+section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+}
+
+@media (min-width: 768px) {
+  #int-div1 {
+      margin-left: 5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  #int-div1 {
+      width: 50%;
+  }
+}
+
+#int-div1{
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #int-div1 {
+    margin-top: 100px;
+  }
+}
+
+#int-h1{
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700; 
+  text-transform: uppercase;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #int-h1 {
+      display: block;
+  }
+}
+
+#int-sp1{
+    color: #00ADB5;
+}
+
+#int-h2{
+  font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  #int-h2 {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+  }
+}
+
+#int-sp2{
+  color: #dc2626;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  #int-sp2 {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+  }
+}
+
+#int-p2{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#int-scl{
+    background-color: #00ADB5;
+    font-weight: 700;
+     border-radius: 0.25rem;
+    color: whitesmoke;
+    display: flex;
+    width: 112px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+  #int-scl {
+      margin: 0px;
+      margin-top: 20px;
+  }
+}
+
+#int-div2{
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+@media (min-width: 768px) {
+  #int-div2 {
+      margin-top: 12rem;
+      margin-right: 0px;
+  }
+}
+
